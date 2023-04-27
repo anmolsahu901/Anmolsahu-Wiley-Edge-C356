@@ -1,0 +1,14 @@
+package Wiley_Core_Java;
+
+public class A6staticBlock {
+	
+	static {
+		System.out.println("Static Block");
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

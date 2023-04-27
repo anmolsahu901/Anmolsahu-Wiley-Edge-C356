@@ -1,0 +1,9 @@
+package Patterns;
+
+public class A1PatternsMatching {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

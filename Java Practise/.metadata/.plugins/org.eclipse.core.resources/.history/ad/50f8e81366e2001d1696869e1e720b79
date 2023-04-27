@@ -1,0 +1,10 @@
+package demo;
+
+public class B7BankAccount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

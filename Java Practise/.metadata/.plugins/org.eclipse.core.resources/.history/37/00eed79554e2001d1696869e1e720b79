@@ -1,0 +1,30 @@
+package Wiley_Core_Java;
+
+abstract class Test1{
+	public abstract void m();
+	
+	public void m2() {
+		System.out.println("Test1 m2 method");
+	}
+}
+
+class Test2 extends Test1{
+
+	@Override
+	public void m() {
+		// TODO Auto-generated method stub
+		System.out.println("test2 m1 method");
+	}
+	
+}
+
+public class B1Abstraction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test1 t = new Test2();
+		t.m();
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package Exceptions;
+
+import java.util.ArrayList;
+
+public class A5Unchecked {
+
+	public static void main(String[] args) {
+		ArrayList<String> students = new ArrayList<>();
+		students.add("Venkat");
+		students.add("Anjali");
+		students.add("Rishav");
+		
+		if(!students.contains("Venkat"))
+		{
+			
+		}
+		else
+		{
+			
+		}
+	}
+
+}

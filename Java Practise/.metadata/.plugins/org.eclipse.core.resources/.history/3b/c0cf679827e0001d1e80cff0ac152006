@@ -1,0 +1,16 @@
+package Wiley_Core_Java;
+
+class Vehicle{
+	public void steering() {
+		System.out.println("steering");
+	}
+}
+
+public class A9HierarchialInheritence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package Wiley_Core_Java;
+
+public class A3MethodTypes {
+
+	public void add(int v1,int v2) {
+		int val = v1 +v2;
+		
+		System.out.println("Addition in instance mehtod : "+val);
+	}
+	
+	public static void mul(int v1,int v2) {
+		int val = v1*v2;
+		
+		System.out.println("Multip. in static mehtod : "+val);
+	}
+	
+	public static void main(String[] args) {
+		
+		mul(10,20);
+	}
+
+}

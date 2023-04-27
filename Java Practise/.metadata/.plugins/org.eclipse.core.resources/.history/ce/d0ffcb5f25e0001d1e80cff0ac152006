@@ -1,0 +1,11 @@
+package Wiley_Core_Java;
+
+
+
+public interface MultilevelInheritence {
+	public static void main(String[] args) {
+		SmartCar sc = new SmartCar();
+		
+		sc.sensor();
+	}
+}

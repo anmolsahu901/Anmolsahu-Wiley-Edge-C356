@@ -1,0 +1,21 @@
+package IOStream;
+import java.io.*;
+
+public class A1BODtream {
+	public static void main(String[] args) {
+		BufferedOutputStream bof = new BufferedOutputStream(System.out);
+		
+		String str = "I am a programer";
+		
+		byte[] b = str.getBytes();
+		
+		try {
+			bof.write(b);
+//			bof.flush(); from stream we are discarding the data
+			bof.close();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

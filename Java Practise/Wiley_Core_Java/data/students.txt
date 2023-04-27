@@ -1,0 +1,5 @@
+Anmol 22 Male B
+Venkat 36 Male A+
+Rishav 22 Male A
+Kritika 22 Male A
+Raj 22 Male A+

@@ -1,0 +1,28 @@
+package IOStream;
+
+import java.io.*;
+
+public class A4StudentRecordOutput {
+	DataOutputStream dataOutput;
+	
+	A4StudentRecordOutput(String outputfile) throws FileNotFoundException{
+		dataOutput = new DataOutputStream(new FileOutputStream(outputfile));
+	}
+	public void write(Student student) throws IOException {
+		dataOutput.writeUTF(student.getName());
+		dataOutput.writeBoolean(student.getGender());
+		dataOutput.writeInt(student.getAge());
+		dataOutput.writeFloat(student.getGrade());
+
+	}
+	
+	public void save() {
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}

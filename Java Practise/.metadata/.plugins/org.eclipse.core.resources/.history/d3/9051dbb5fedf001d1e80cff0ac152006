@@ -1,0 +1,21 @@
+package Wiley_Core_Java;
+
+public class A1CreateClass {
+
+	int a =10;
+	static int b = 20;
+	
+	public void add() {
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		A1CreateClass obj = new A1CreateClass();
+//		System.out.println(obj.a);
+		
+		obj.add();
+		
+		System.out.println(b);
+	}
+
+}

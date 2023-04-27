@@ -1,0 +1,10 @@
+package DateTimeClass;
+
+public class A1DateTimeClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

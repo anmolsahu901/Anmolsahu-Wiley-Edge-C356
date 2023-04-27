@@ -1,0 +1,18 @@
+package Wiley_Core_Java;
+
+class Vehicle1{
+	public void steering() {
+		System.out.println("steering");
+	}
+}
+
+class Car1 extends V
+
+public class A9HierarchialInheritence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

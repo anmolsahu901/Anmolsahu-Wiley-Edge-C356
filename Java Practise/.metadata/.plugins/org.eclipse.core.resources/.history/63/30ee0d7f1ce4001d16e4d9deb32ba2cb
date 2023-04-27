@@ -1,0 +1,18 @@
+package Randomtopics;
+
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+
+public class A2CurrencyClass {
+
+	public static void main(String[] args) {
+		Currency usd = Currency.getInstance("USD");
+		NumberFormat format = NumberFormat.getCurrencyInstance(Locale.US);
+		String formattedVal = format.format(108.5);
+		
+		System.out.println(formattedVal);
+		
+	}
+
+}

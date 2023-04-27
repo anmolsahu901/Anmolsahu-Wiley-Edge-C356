@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\practise\Wiley Edge Training\Java Practise\.metadata\.plugins\org.eclipse.jdt.core
+1642175237.index
+3559792226.index

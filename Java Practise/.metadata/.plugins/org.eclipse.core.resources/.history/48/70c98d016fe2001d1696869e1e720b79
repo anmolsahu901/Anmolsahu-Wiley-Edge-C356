@@ -1,0 +1,22 @@
+package Exceptions;
+
+public class A1ExceptionHandling {
+	public static void main(String[] args) {
+		System.out.println("First statement");
+		
+		int arr[]  = {1,2,3,4};
+		
+//		System.out.println(arr[4]);
+		try {
+			System.out.println(arr[0]);
+			System.out.println(arr[4]);
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+			System.out.println(e.toString());
+			e.getStackTrace();
+		}
+		
+		System.out.println("Another statement");
+	}
+}
