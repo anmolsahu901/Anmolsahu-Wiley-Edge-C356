@@ -1,0 +1,30 @@
+package generics;
+
+import java.util.ArrayList;
+
+public class A1GenericsClass {
+
+	public static void main(String[] args) {
+//		Printer<Double> printer = new Printer<Double>(27.4);
+//		Printer<String> printer2 = new Printer("27.4");
+//		Printer<Integer> printer3 = new Printer(900.6);
+//
+//		
+//		printer.print();
+//		printer2.print();
+//		printer3.print();
+//		
+		
+		Printer<Cat> printer = new Printer(new Cat());
+		printer.print();
+		
+		Printer<Dog> printer1 = new Printer(new Dog());
+		printer.print();
+		
+//		ArrayList<Object> cats = new ArrayList<>();
+//		cats.add(new Cat());
+//		cats.add(new Cat());
+//		cats.add(new Dog());
+	}
+
+}

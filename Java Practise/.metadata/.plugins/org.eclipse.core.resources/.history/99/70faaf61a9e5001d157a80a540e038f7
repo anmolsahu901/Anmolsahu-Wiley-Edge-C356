@@ -1,0 +1,11 @@
+package JavaThreads;
+
+class BankAccount{
+	int amount = 1000;
+	
+	public synchronized void 
+}
+
+public class A8INterCommunication {
+
+}

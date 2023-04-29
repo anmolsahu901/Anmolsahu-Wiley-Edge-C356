@@ -1,0 +1,13 @@
+package JavaThreads;
+
+class CloseEvent extends Thread{
+	
+}
+
+public class A5ShutDownThrread {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

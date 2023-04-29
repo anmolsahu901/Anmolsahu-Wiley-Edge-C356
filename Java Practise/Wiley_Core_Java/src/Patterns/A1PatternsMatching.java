@@ -10,8 +10,9 @@ public class A1PatternsMatching {
 		Pattern pattern = Pattern.compile("learn",Pattern.CASE_INSENSITIVE);
 		
 		Matcher matcher = pattern.matcher(input);
-//		System.out.println(matcher.find());
-		
+		System.out.println(matcher.find());
+		System.out.println(matcher.matches());
+		/*
 		//finds only once
 		if(matcher.find())
 		{
@@ -28,7 +29,7 @@ public class A1PatternsMatching {
 		if(idx != -1) {
 			System.out.println(idx);
 		}
-		
+		*/
 		
 		
 		
