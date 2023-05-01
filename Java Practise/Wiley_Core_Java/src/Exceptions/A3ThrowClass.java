@@ -2,7 +2,7 @@ package Exceptions;
 
 public class A3ThrowClass {
 	
-	public static void m1() throws InterruptedException{
+	public static void m1() {
 		try {
 			m2();
 			
@@ -17,7 +17,7 @@ public class A3ThrowClass {
 		t.sleep(1000);
 	}
 	
-	public static void main(String[] args) throws InterruptedException{
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hii");
 		m1();

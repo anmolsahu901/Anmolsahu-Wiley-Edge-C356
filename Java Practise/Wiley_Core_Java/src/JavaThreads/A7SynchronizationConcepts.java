@@ -1,7 +1,7 @@
 package JavaThreads;
 
 // Synchronization capability to control the access of multiple threads to any shared resource
-
+//https://www.javatpoint.com/synchronization-in-java
 // why use :
 /*
  * to prevent thread interface to another thread
@@ -11,14 +11,14 @@ package JavaThreads;
 class Sheet{
 	
 	public void writeln(int k) {
-		synchronized (this){
+		synchronized (this){  //synchronized block  
 			for(int i=0;i<=10;i++) {
 				System.out.println(i*k);
 			}
 		}
-		for(int i=0;i<=10;i++) {
-			System.out.println(i*k);
-		}
+//		for(int i=0;i<=10;i++) {
+//			System.out.println(i*k);
+//		}
 	}
 }
 

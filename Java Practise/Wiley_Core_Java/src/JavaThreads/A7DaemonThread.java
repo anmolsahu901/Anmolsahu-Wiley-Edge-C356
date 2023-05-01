@@ -1,18 +1,16 @@
 package JavaThreads;
 
-// this ois low priority thread that performs background operations 
+// this is low priority thread that performs background operations 
 //such as garabage collection, finalizer, Action
-
 class SupportClass extends Thread{
 	
 	public void run() {
 		// check if demon thread
 		if(Thread.currentThread().isDaemon()) {
-			System.out.println("this is a demon");
+			System.out.println("this is a demon "+Thread.currentThread().getName());
 		}
 		else
-			System.out.println("this is not demon");
-
+			System.out.println("this is not demon "+Thread.currentThread().getName() );
 	}
 }
 

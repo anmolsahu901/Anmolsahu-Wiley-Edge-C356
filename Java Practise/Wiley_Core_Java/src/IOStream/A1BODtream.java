@@ -11,24 +11,25 @@ public class A1BODtream {
 	public static void main(String[] args) throws IOException {
 		
 		//write in file
-	/*	FileOutputStream fout = new FileOutputStream("D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data1.txt");
+		FileOutputStream fout = new FileOutputStream("D:\\WileyEdgeTraining\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data1.txt");
 		BufferedOutputStream bof = new BufferedOutputStream(fout);
 		
-		String str = "I am a programer";
+		String str = "I am a good programer";
 		
 		byte[] b = str.getBytes();
 		
 		try {
 			bof.write(b);
-//			bof.flush(); from stream we are discarding the data
+//			bof.flush(); //from stream we are discarding the data
 			bof.close();
+			System.out.println("Data Added");
 		}
 		catch(IOException e) {
 			e.printStackTrace();
 		}
-		*/
 		
-		FileInputStream fin = new FileInputStream("D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data1.txt");
+		
+		/*FileInputStream fin = new FileInputStream("D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data1.txt");
 		BufferedInputStream bis = new BufferedInputStream(fin);
 		
 		int i;
@@ -42,7 +43,7 @@ public class A1BODtream {
 //		}
 		
 		bis.close();
-		fin.close();
+		fin.close();*/
 		
 	}
 	

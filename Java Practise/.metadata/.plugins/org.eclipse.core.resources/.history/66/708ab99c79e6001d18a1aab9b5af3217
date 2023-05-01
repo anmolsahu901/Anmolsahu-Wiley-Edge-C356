@@ -1,0 +1,29 @@
+package Exceptions;
+
+public class A3ThrowBasic {
+public static void main(String[] args) {
+	int i = 1;
+	int age = 18;
+
+	try {
+		System.out.println("inside try");
+		int k = age/i;
+		
+		if(i==1)
+		{
+			throw new ArithmeticException("Value can't be one");
+		}
+		
+	} catch (ArithmeticException e) {
+		System.out.println("inside AE catch block : "+e);
+	}
+	catch (Exception e) {
+		// TODO: handle exception
+		System.out.println("inside Default catch block ");
+
+	}
+	
+	System.out.println("statementfinal");
+	
+}
+}

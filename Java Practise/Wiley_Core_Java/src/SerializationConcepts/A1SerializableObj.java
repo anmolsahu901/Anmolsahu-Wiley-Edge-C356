@@ -8,7 +8,7 @@ public class A1SerializableObj {
 	public static void main(String[] args) {
 		
 		//serialized and send to network
-		Book b1 = new Book(108,"Java Essentials oijfjf");
+		Book b1 = new Book(108,"Java Essentials ");
 		
 		try {
 			FileOutputStream fos = new FileOutputStream("books.ser");

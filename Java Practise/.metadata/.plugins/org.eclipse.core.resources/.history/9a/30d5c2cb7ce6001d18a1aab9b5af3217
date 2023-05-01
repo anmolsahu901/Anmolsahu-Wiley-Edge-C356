@@ -1,0 +1,23 @@
+package Exceptions;
+// throws __Exception in that method implies that I will handle Exception
+// the one who invoke me it will handle the Exception
+
+
+
+public class A3ThrowsBasic {
+
+	public static void show() throws ClassNotFoundException {
+//		try {
+			Class.forName("anmol");
+//		}catch(ClassNotFoundException e) {
+//			System.out.println("Not able find class "+e);
+//		}
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+		show();
+		System.out.println("last statement");
+	}
+
+}

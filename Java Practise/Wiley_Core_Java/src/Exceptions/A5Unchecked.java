@@ -20,7 +20,8 @@ public class A5Unchecked {
 		{
 			try {
 				throw new StudentNotFound("This Student is not found");
-			} catch (StudentNotFound e) {
+			} 
+			catch (StudentNotFound e) {
 				e.printStackTrace();
 				e.getMessage();
 			}

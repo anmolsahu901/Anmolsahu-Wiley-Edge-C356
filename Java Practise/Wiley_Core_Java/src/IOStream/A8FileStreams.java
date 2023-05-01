@@ -6,7 +6,7 @@ public class A8FileStreams {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-//		FileOutputStream fout = new FileOutputStream("D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data4.txt");
+//		FileOutputStream fout = new FileOutputStream("D:\WileyEdgeTraining\Wiley Edge Training\Java Practise\Wiley_Core_Java\data\\data4.txt");
 //		
 //		String s = "Wiley Full Stack Project";
 //		
@@ -19,7 +19,7 @@ public class A8FileStreams {
 		
 //		System.out.println("Anmol");
 		
-		FileInputStream fin = new FileInputStream("D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data4");
+		FileInputStream fin = new FileInputStream("D:\\WileyEdgeTraining\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\data4.txt");
 		
 		int i=0;
 		

@@ -1,0 +1,28 @@
+package JavaThreads;
+
+class A extends Thread{
+	void show() {
+		for(int i=0;i<10;i++)
+		System.out.println("Hii");
+	}
+}
+
+class B extends Thread{
+	void show() {
+		for(int i=0;i<10;i++)
+		System.out.println("Hello");
+	}
+}
+
+public class A1ThreadBasic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A a = new A();
+		B b = new B();
+		a.show();
+		b.show();
+		
+	}
+
+}

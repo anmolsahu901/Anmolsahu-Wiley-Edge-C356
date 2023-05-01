@@ -29,7 +29,7 @@ class AgeNotValid extends Exception{
 
 public class A4CustomException {
 
-	public static void getAge(int age) throws AgeNotValid {
+	public static void getAge(int age)  {
 		if(age>18) {
 			try {
 				throw new AgeNotValid("Age not valid");				
@@ -45,7 +45,7 @@ public class A4CustomException {
 		}
 	}
 
-	public static void main(String[] args) throws AgeNotValid {
+	public static void main(String[] args)  {
 		getAge(20);
 	}
 

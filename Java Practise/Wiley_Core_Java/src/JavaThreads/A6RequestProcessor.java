@@ -5,11 +5,19 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
 public class A6RequestProcessor {
-	//threadpool : group of worker threadsthat are waiting or the joba nd reused many times.
-	// threadgroup 
-	// ExecutorService : automatic provides pool of thread
-	//  Executotr : components used ofr mananging worker thrreads efficently
+	//threadpool : group of worker threads that are waiting or the job and reused many times.
+	
+	// ExecutocrService : automatic provides pool of thread
+
 	// threadgroup : provide collecting multiple thread into a single object
+	
+	//  Executor : components used for managing worker threads efficiently
+	
+	//ThreadFactory:An object that creates new threads on demand. Using thread factoriesremoves
+	//  hardwiring of calls to new Thread,enabling applications to use special thread subclasses,
+	//priorities, etc
+	
+	
 	private ExecutorService threadPool;
 	private ThreadGroup databaseThreadGroup;
 	private ThreadGroup ReportThreadGroup;

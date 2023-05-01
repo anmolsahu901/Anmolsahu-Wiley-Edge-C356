@@ -21,7 +21,7 @@ public class A6ExceptionPropagation {
 		method2();
 	}
 	
-	public static void method2() throws Exception {
+	public static void method2() throws Exception  {
 		throw new Exception("Exception occured in the method 2");
 	}
 

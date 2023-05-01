@@ -34,7 +34,7 @@ public class StudentRecordOutput {
 //			System.exit(0);
 //		}
 		
-		String outputfile = "D:\\practise\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\studentout.dat";
+		String outputfile = "D:\\WileyEdgeTraining\\Wiley Edge Training\\Java Practise\\Wiley_Core_Java\\data\\studentout.dat";
 		
 		List<Student> listStudent = new ArrayList<>(); 
 		
@@ -42,6 +42,7 @@ public class StudentRecordOutput {
 		listStudent.add(new Student(21,"Anmol", true,  81.5f));
 		listStudent.add(new Student(18,"Shreya", false,  91.1f));
 		listStudent.add(new Student(19,"Rishav", true,  95.1f));
+		listStudent.add(new Student(33,"Aadi", true,  45.7f));
 		
 		try {
 			StudentRecordOutput outputWriter = new StudentRecordOutput(outputfile);
@@ -51,6 +52,7 @@ public class StudentRecordOutput {
 			}
 			
 			outputWriter.save();
+			System.out.println("Data added");
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
