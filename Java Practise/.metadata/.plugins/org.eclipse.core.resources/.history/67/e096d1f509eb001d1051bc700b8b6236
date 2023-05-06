@@ -1,0 +1,11 @@
+package Lambda;
+
+public class A2LambdaClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A1Product myProd = new A1Product();
+		myProd.print();
+	}
+
+}

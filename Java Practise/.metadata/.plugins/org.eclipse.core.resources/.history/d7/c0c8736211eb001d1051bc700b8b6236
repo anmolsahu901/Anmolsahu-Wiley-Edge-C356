@@ -1,0 +1,14 @@
+package Lambda;
+
+public interface Printable {
+	int i;
+	String j;
+	
+	static void display() {
+		System.out.println("Display");
+	}
+	
+//	void print(String suffix,String name);
+	String print(String suffix);
+	
+}

@@ -1,0 +1,15 @@
+package Lambda;
+
+@FunctionalInterface
+public interface Printable {
+	public static final int i = 0;
+	public static final String j = "";
+	
+	static void display() {
+		System.out.println("Display");
+	}
+	
+//	void print(String suffix,String name);
+	String print(String suffix);
+	
+}

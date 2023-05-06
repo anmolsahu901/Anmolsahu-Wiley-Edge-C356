@@ -1,0 +1,32 @@
+package collections;
+
+import java.util.*;
+
+public class ComparablePractise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Comparator com = new Comparator<Integer>() {
+			public int compare(Integer i,Integer j) {
+				if(i>j)
+					return 1; //swap
+				else
+					return -1;
+			}
+		};
+		
+		List<Integer> list = new ArrayList<>();
+		list.add(10);
+		list.add(40);
+		list.add(30);
+		list.add(20);
+		list.add(90);
+		
+		Collections.sort(list,com);
+		
+		System.out.println(list);
+		
+	}
+
+}

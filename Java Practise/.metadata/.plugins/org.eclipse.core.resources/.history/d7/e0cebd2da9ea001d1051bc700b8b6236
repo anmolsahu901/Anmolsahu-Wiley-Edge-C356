@@ -1,0 +1,6 @@
+package main_page;
+
+public class FilePath {
+	static String Userpath = "C:\\Users\\Sahil\\Documents\\Shreyash_files\\Projects\\Wiley Edge\\Project\\Shopping-Application\\Shopping_Application\\src\\main_page\\data\\User.csv";
+	static String Productpath = "C:\\Users\\Sahil\\Documents\\Shreyash_files\\Projects\\Wiley Edge\\Project\\Shopping-Application\\Shopping_Application\\src\\main_page\\data\\Product.csv";
+}

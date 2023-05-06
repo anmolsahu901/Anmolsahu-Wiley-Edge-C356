@@ -1,7 +1,0 @@
-package generics;
-
-public class Cat {
-	public Cat() {
-		System.out.println("this is a cat class");
-	}
-}

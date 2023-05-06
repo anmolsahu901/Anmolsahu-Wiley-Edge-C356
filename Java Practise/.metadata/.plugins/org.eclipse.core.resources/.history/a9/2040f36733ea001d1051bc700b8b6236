@@ -1,0 +1,24 @@
+package collections;
+
+import java.util.TreeSet;
+
+public class Treesetclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Integer> set = new TreeSet<>();
+		
+		set.add(98);
+		set.add(8);
+		set.add(4);
+		set.add(2);
+		set.add(78);
+		
+		System.out.println(set);
+		System.out.println(set.floor(97));
+		System.out.println(set.last());
+		
+		
+	}
+
+}

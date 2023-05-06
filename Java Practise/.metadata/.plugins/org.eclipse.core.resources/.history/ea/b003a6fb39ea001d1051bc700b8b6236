@@ -1,0 +1,22 @@
+package collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Mapclass {
+
+	public static void main(String[] args) {
+		Map<String,String> ss = new HashMap<>();
+		ss.put("a", "abs");
+		ss.put("b", "abs");
+		ss.put("c", null);
+		ss.put(null, null);
+		ss.put(null, "dhsoj");
+		ss.put("a", "abc");
+
+		System.out.println(ss);
+	
+	
+	}
+
+}

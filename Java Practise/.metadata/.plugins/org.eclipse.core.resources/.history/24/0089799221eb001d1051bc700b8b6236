@@ -1,0 +1,15 @@
+package Lambda;
+
+interface Calc{
+	int calculate(int val);
+}
+
+public class A3FunctionalInterfaceClass {
+
+	public static void main(String[] args) {
+		Calc cl = (val)-> val+5;
+		
+		//call method
+		System.out.println("Result : "+cl.calculate(5));
+	}
+}

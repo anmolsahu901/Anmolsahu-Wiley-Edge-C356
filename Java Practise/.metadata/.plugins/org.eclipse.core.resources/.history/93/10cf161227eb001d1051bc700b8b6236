@@ -1,0 +1,14 @@
+package Lambda;
+
+import java.util.function.UnaryOperator;
+// functional 
+public class A5BiFunctionClass {
+
+	public static void main(String[] args) {
+		UnaryOperator<Integer> n = a -> a+1;
+		System.out.println(n.apply(0));
+		
+		
+	}
+
+}
