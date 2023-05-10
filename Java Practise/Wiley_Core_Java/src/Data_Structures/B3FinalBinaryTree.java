@@ -1,0 +1,48 @@
+package Data_Structures;
+
+public class B3FinalBinaryTree {
+
+	Node root;
+	
+	boolean isFullBinary(Node node) {
+		
+		if(node == null)
+			return true;
+		
+		if(node.left==null && node.right==null)
+			return true;
+		
+		if(node.left!= null  && node.right!=null) {
+			return (isFullBinary(node.left) && isFullBinary(node.right));
+		}
+
+		
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		B3FinalBinaryTree tree = new B3FinalBinaryTree();
+		tree.root = new Node(1);
+		tree.root.left = new Node(2);
+		tree.root.right = new Node(3);
+		tree.root.left.left = new Node(4);
+		tree.root.left.right = new Node(5);
+		tree.root.left.right.left = new Node(6);
+		tree.root.left.right.right = new Node(7);
+
+		if(tree.isFullBinary(tree.root))
+			System.out.println("YEs it is full binary tree");
+		else
+			System.out.println("No");
+
+		
+	}
+
+}
+
+
+
+
+
+
+
