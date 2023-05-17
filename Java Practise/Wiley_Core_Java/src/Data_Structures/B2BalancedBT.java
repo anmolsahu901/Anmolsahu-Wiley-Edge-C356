@@ -1,5 +1,10 @@
 package Data_Structures;
-
+/*
+ * >It is a type of binary tree in which the difference between the height of the left and 
+ *  the right subtree for each node is either 0 or 1.
+ *
+ *
+ */
 public class B2BalancedBT {
 
 	Node root;

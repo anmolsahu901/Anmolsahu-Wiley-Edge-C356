@@ -1,7 +1,9 @@
 package Data_Structures;
 
 //Checking if the binary tree is a complete binary tree or not
-
+/*  A Binary Tree is a Complete Binary Tree if all the levels are completely filled 
+ *  except possibly the last level and the last level has all keys as left as possible.
+ */
 //Node creation
 class NodeTwo {
 	int data;
