@@ -223,14 +223,14 @@ FROM
     customers;
 
 -- 
-SELECT
+SELECT    --- choose null once also
     DISTINCT state
 FROM
     customers;
 
 --
 SELECT
-    DISTINCT state, -- distinct pair of state and city 
+    DISTINCT state, -- distinct pair of (state and city) 
     city
 FROM
     customers

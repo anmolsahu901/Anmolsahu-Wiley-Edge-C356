@@ -15,5 +15,19 @@ CREATE TABLE tasks(
     priority INT DEFAULT 5
 );
 
+when ->loaded
+parent 
+child
+
+
+--disable foreign key_checks 
+SET foreign key_checks = 0;
+
+--enable foreign key_checks 
+SET foreign key_checks = 1;
+
+
+
+
 
 

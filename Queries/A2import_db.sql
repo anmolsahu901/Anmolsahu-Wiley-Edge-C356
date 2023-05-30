@@ -3,6 +3,6 @@
 --     > mysql -u root -p
 --     Enter password: ********
 -- Step 3: Import using following command 
---     source path\mysqlsampledatabase.sql
+--     source D:\WileyEdgeTraining\DBMS\mysql_database.sql
 -- Step 4: Verify
 --     show databases;

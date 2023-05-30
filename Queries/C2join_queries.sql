@@ -27,7 +27,7 @@ FROM
 
 -- The column heading is quite difficult to read. To solve this, you can assign the column heading of the output a column alias as shown in the following query:
 SELECT
-   CONCAT_WS(', ', lastName, firstname) AS `Full name`
+   CONCAT_WS(', ', lastName, firstname) AS 'Full name'
 FROM
    employees;
 
@@ -35,12 +35,12 @@ FROM
 -- Use column aliases in GROUP BY and HAVING clauses.
 
 SELECT
-	orderNumber `Order no.`,
+	orderNumber 'Order no.',
 	SUM(priceEach * quantityOrdered) total
 FROM
 	orderDetails
 GROUP BY
-	`Order no.`
+	'Order no.'
 HAVING
 	total > 60000;
 
@@ -54,7 +54,8 @@ FROM
 	customers c
 INNER JOIN orders o ON c.customerNumber = o.customerNumber
 GROUP BY
-	customerName
+
+	c.customerNumber
 ORDER BY
 	total DESC;
 

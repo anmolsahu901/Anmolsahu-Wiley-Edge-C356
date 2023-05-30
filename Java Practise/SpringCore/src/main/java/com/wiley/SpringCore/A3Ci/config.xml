@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+
+	<bean class="com.wiley.SpringCore.A3Ci.Cert" name="cert1">
+		<constructor-arg value="AWS CERTIFIED" />
+	</bean>
+
+	<bean class="com.wiley.SpringCore.A3Ci.Person" name="p1">
+		<constructor-arg type="int" value="12" />
+		<constructor-arg value="venkat" />
+		<constructor-arg ref="cert1" />
+	</bean>
+
+
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<bean class = "com.wiley.SpringCore.A3Ci.Cert" name = "cert2">
+		<constructor-arg value = "JAVA  certified" />
+	</bean>
+	
+	<bean class = "com.wiley.SpringCore.A3Ci.Person" name = "p2">
+		<constructor-arg value = "Anmol Sahu"/>
+		<constructor-arg value = "901"/>
+		<constructor-arg ref = "cert2"/>
+	</bean>
+	
+	<!-- ////////////////////// -->
+
+	<bean class = "com.wiley.SpringCore.A3Ci.Addition" name = "Add">
+		<constructor-arg value = "12" index = "1"/>
+		<constructor-arg value = "20" index = "0"/>
+	</bean>
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

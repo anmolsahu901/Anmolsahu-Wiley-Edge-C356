@@ -40,17 +40,16 @@
 -----------------------------------------------------------
 -- Create Tables 
 CREATE TABLE IF NOT EXISTS tasks (
-    task_id INT AUTO_INCREMENT PRIMARY KEY,
+    task_id INT AUTO_INCREMENT PRIMARY KEY, -- every record will increment automatically
     title VARCHAR(255) NOT NULL,
     start_date DATE,
     due_date DATE,
     status TINYINT NOT NULL,
     -- TINYINT LIKE : 0 TO 5 DEPENDS 
     priority TINYINT NOT NULL,
-    -- PRIORITY GIVEN TO SOME VARIABLE 
     description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) ENGINE = INNODB;
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- at what time the task table is created stored here 
+) ENGINE = INNODB; -- this table processed as per the innodb engine
 
 CREATE TABLE IF NOT EXISTS checklists (
     todo_id INT AUTO_INCREMENT,
@@ -60,6 +59,15 @@ CREATE TABLE IF NOT EXISTS checklists (
     PRIMARY KEY (todo_id, task_id),
     FOREIGN KEY (task_id) REFERENCES tasks (task_id) ON UPDATE RESTRICT ON DELETE CASCADE -- 10:26 MORNING 
 );
+
+-- ON UPDATE RESTRICT: This part of the statement specifies the action to be taken if an update is attempted on the referenced key value.
+--  In this case, "RESTRICT" means that if an attempt is made to update the value of "task_id" in the "tasks" table, the update will be 
+--  restricted and not allowed if it would result in a violation of the foreign key constraint. In other words, it prevents updating the 
+--  "task_id" value if it is referenced by any other row in another table.
+
+-- ON DELETE CASCADE: This part of the statement specifies the action to be taken if a referenced row in the "tasks" table is deleted.
+--  In this case, "CASCADE" means that if a row in the "tasks" table is deleted, all rows in the current table that reference the 
+--  deleted row will also be deleted. This ensures that the data remains consistent across both tables.
 
 ALTER TABLE
     checklists
@@ -157,7 +165,13 @@ FROM
     employees;
 
 -----------------
---referenceed by VIEW :11AM
+--referenceed by VIEW 
+-- In SQL, a view is a virtual table based on the result-set of an SQL statement.
+-- A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+-- You can add SQL statements and functions to a view and present the data as if the data were coming from one single table.
+
+
+
 CREATE VIEW v_employee_info as
 SELECT
     id,
@@ -190,7 +204,10 @@ people TO employees;
 ALTER TABLE
     old_tablename to new_tableName;
 
---- create temporary table
+-- create temporary table
+-- A temporary table is a base table that is not stored in the database, but instead exists only 
+-- while the database session in which it was created is active
+
 CREATE TEMPORARY TABLE lastNames
 SELECT
     DISTINCT last_name
@@ -262,12 +279,15 @@ DROP TABLE LIKE '%PATTERNS%';
 
 ---11:48
 
-
+DESCRIBE table;
+show databases;
+show tables;
 
 
 
 -------------------------
-
+-- A generated column is a special column that is always computed from other columns. 
+-- Thus, it is for columns what a view is for tables.View is not stored in DB
 -- Generated columns
 CREATE TABLE IF NOT EXISTS contacts(
      id int AUTO_INCREMENT primary key,

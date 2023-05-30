@@ -61,7 +61,7 @@ GROUP BY
 
 ---- get the total sales for each year 
 SELECT
-    YEAR(orderDate) AS year,
+    YEAR(orderDate) AS year,   -- returns year part of date : format of insertion '2023-05-24'
     SUM(quantityOrdered * priceEach) AS total
 FROM
     orders
@@ -109,6 +109,11 @@ GROUP BY
 -- HAVING 
 -- FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> DISTINCT -> ORDER BY -> LIMIT
 
+
+-- SELECT column1, column2, ...
+-- FROM table1
+-- INNER JOIN table2
+--     ON table1.column = table2.column;
 
 
 -- ROLLUP
