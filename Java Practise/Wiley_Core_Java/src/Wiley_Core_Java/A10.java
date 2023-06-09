@@ -41,7 +41,7 @@ public class A10 {
 		obj.HelloB();
 		obj.HelloA();
 		
-		C obj = new C();
+		C obj1 = new C();
 		
 	}
 

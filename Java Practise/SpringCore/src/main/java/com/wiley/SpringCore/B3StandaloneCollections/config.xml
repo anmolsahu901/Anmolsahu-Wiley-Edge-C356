@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+
+	<!-- way 2 -->
+	<bean class="com.wiley.SpringCore.Student" name="wileystudent1">
+		<property name="studentId" value="1919"></property>
+		<property name="studentName" value="Anmol"></property>
+		<property name="studentAddress" value="Jabalpur"></property>
+	</bean>
+
+
+	<bean class="com.wiley.SpringCore.Student" name="wileystudent2">
+		<property name="studentId" value="1912"></property>
+		<property name="studentName" value="Aanshi"></property>
+		<property name="studentAddress" value="Jabalpur"></property>
+		<property name="course">
+			<list>
+				<value>Java</value>
+				<value>JDBC</value>
+				<value>DSA</value>
+				<value>SQL</value>
+				<value>C++</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean class="com.wiley.SpringCore.Student" name="wileystudent6">
+		<property name="studentId" value="1921"></property>
+		<property name="studentName" value="Anjali"></property>
+		<property name="studentAddress" value="Jabalpur"></property>
+		<property name="course">
+			<list>
+				<value>Java</value>
+				<value>JDBC</value>
+				<value>DSA</value>
+				<value>SQL</value>
+				<value>C++</value>
+			</list>
+		</property>
+		<property name = "phone">
+			<map>
+				<entry key= "1" value = "11111111"/>
+				<entry key= "2" value = "22222222"/>
+				<entry key= "3" value = "33333333"/>
+			</map>
+		</property>
+	</bean>
+	
+
+	<!-- way3 -->
+	<bean class="com.wiley.SpringCore.Student" name="wileystudent3"
+		p:studentId="1914" p:studentName="Mansi" p:studentAddress="Bangalore">
+
+	</bean>
+	
+	<bean  class="com.wiley.SpringCore.Studentinfo" name="wileystudent4">
+		<property name = "props">
+			<props>
+				<prop key = "name">Anmol</prop>
+				<prop key = "Workat">wileyEdge</prop>
+			</props>
+		</property>
+
+	</bean>
+
+
+	<!-- basic 1 <property name = "studentId"> <value>1919</value> </property> 
+		<property name = "studentName"> <value>Anmol</value> </property> <property 
+		name = "studentAddress"> <value>jabalpur</value> </property> -->
+
+</beans>

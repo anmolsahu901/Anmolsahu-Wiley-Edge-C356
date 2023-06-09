@@ -1,0 +1,6 @@
+<h2>Students List</h2>
+<h3>{{message}}</h3>
+
+<ul>
+    <li *ngFor = "let student of students">{{student.id}} - {{student.name | uppercase}}</li>
+</ul>

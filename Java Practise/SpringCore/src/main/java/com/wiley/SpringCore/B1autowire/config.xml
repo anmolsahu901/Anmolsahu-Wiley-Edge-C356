@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+ 
+ <!-- dependent bean -->
+ <bean class = "com.wiley.SpringCore.B1autowire.Address" name = "address" p:city="JBP" p:street = "dhanvantari road"/>
+
+ <!-- find bean with same name as mention in class as instance object and inject it here setter are used -->
+ <bean class = "com.wiley.SpringCore.B1autowire.Emp" name = "emp1" autowire = "byName"/>
+ 
+  <!-- finding bean by type if more than one bean is found on same type it will give error , here setter are used  -->
+  <!-- to resolve this problem of found more than one bean we use @Qualifier("bean_name") in Modal/Bean class -->
+  <bean class = "com.wiley.SpringCore.B1autowire.Emp" name = "emp2" autowire = "byType"/>
+ 
+  <!-- here constructor is used to autowire  -->
+  <bean class = "com.wiley.SpringCore.B1autowire.Emp" name = "emp3" autowire = "constructor"/>
+ 
+ </beans>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

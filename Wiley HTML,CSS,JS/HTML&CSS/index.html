@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+        }
+        
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .image-container img {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heading Box</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    
+    <main>
+        <div>
+            <h2>Heading Below</h2>
+        </div>
+        
+        <div>
+            <video src="video.mp4" controls></video>
+        </div>
+    </main>
+    
+    <div class="image-container">
+        <div>
+            <img src="./images/download (1).jpeg" alt="Image 1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, temporibus cumque maxime rerum at praesentium quia labore sed cupiditate odio nobis amet itaque magni debitis excepturi beatae veritatis libero provident! </p>
+        </div>
+        <div>
+            <img src="./images/download (2).jpeg" alt="Image 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa deserunt nesciunt molestias sequi aliquam qui, repudiandae cumque, recusandae mollitia ex eum ratione nulla dolore facere possimus assumenda. In, porro repudiandae!</p>
+        </div>
+        <div>
+            <img src="./images/download.jpeg" alt="Image 3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit dolor atque odit omnis quidem iusto deserunt in magnam ducimus, optio pariatur ad itaque cupiditate, perferendis eum at officiis vel.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

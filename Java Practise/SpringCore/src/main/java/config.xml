@@ -9,14 +9,14 @@
  http://www.springframework.org/schema/spring-context.xsd">
 
 	<!-- way 2 -->
-	<bean class="com.wiley.SpringCore.Student" name="wileystudent1">
+	<bean class="com.wiley.SpringCore.A1.Student" name="wileystudent1">
 		<property name="studentId" value="1919"></property>
 		<property name="studentName" value="Anmol"></property>
 		<property name="studentAddress" value="Jabalpur"></property>
 	</bean>
 
 
-	<bean class="com.wiley.SpringCore.Student" name="wileystudent2">
+	<bean class="com.wiley.SpringCore.A1.Student" name="wileystudent2">
 		<property name="studentId" value="1912"></property>
 		<property name="studentName" value="Aanshi"></property>
 		<property name="studentAddress" value="Jabalpur"></property>
@@ -31,7 +31,7 @@
 		</property>
 	</bean>
 	
-	<bean class="com.wiley.SpringCore.Student" name="wileystudent6">
+	<bean class="com.wiley.SpringCore.A1.Student" name="wileystudent6">
 		<property name="studentId" value="1921"></property>
 		<property name="studentName" value="Anjali"></property>
 		<property name="studentAddress" value="Jabalpur"></property>

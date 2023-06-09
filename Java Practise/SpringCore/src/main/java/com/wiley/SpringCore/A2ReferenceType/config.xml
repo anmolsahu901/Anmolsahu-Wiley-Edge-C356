@@ -8,32 +8,31 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/spring-context.xsd">
 
-	<bean class="com.wiley.SpringCoreReferenceType.WileyB"
+	<bean class="com.wiley.SpringCore.A2ReferenceType.WileyB"
 		name="wbref">
 		<property name="count" value="99"></property>
 	</bean>
 
-	<bean class="com.wiley.SpringCoreReferenceType.WileyA"
+	<bean class="com.wiley.SpringCore.A2ReferenceType.WileyA"
 		name="waref">
 		<property name="counta" value="90"></property>
 		
-		<!--  <property name="obj">
-			<ref bean="wbref" /> </property>-->
+		  <property name="obj">
+			<ref bean="wbref" /> </property>
 			
 			
-		
 	</bean>
 
 
 <!-- ///////////2:35///////-->
 
-	<bean class="com.wiley.SpringCoreReferenceType.Address" name = "wileyAddress">
+	<bean class="com.wiley.SpringCore.A2ReferenceType.Address" name = "wileyAddress">
 	
 	<property name = "address" value = "33, Sai Colony"></property>
 	</bean>
 
 
-	<bean class="com.wiley.SpringCore.Student" name="wileystudent">
+	<bean class="com.wiley.SpringCore.A2ReferenceType.Student" name="wileystudent">
 		<property name="studentId" value="1919"></property>
 		<property name="studentName" value="Anmol"></property>
 		<property name="studentAddress" value="Jabalpur"></property>

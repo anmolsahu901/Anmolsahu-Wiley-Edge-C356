@@ -1,0 +1,68 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: qa
+---
+
+spring :
+  profiles: dev
+  datasource :
+    driver: com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/wileyDept?useSSL=false
+    username : root
+    password : Anmolsahu@123
+  jpa:
+
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+welcome:
+  message:Welcome to Wiley
+
+---
+
+spring :
+  profiles: production
+  datasource :
+    driver: com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/wileyDept?useSSL=false
+    username : root
+    password : Anmolsahu@123
+  jpa:
+
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+welcome:
+  message:Welcome to Wiley
+
+---
+
+
+spring :
+  profiles: qa
+  datasource :
+    driver: com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://localhost:3306/wileyDept?useSSL=false
+    username : root
+    password : Anmolsahu@123
+  jpa:
+
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+welcome:
+  message:Welcome to Wiley
+
+---
